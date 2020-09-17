@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>WS2 Exercise 5</title>
+    <style>
+      body {
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+        color: #333333;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>This page was created for Exercise 5!</h1>
+    <script>
+      document.write(
+        '<img src="https://coryrylan.com/assets/images/posts/types/javascript-1280x960.png">'
+      );
+      var images = [
+        "http://farm4.staticflickr.com/3691/11268502654_f28f05966c_m.jpg",
+        "http://farm1.staticflickr.com/33/45336904_1aef569b30_n.jpg",
+        "http://farm6.staticflickr.com/5211/5384592886_80a512e2c9.jpg",
+      ];
+
+      function kuvat() {
+        var number = Math.round(Math.random() * 2);
+        var x = (document.getElementsByTagName("img")[0].src = images[number]);
+      }
+      kuvat();
+    </script>
+  </body>
+</html>
