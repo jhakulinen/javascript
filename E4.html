@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>WS2 Exercise 4</title>
+    <style>
+      body {
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+        color: #333333;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>This page was created for Exercise 4</h1>
+    <p id="vahvistus"></p>
+    <script>
+      function confirmation() {
+        var txt;
+        var x = confirm(
+          "Are you a student? Press OK if you are, press Cancel if you are not"
+        );
+        if (x == true) {
+          txt = "Welcome student!";
+        } else {
+          txt = "This page is only for students!";
+        }
+        document.getElementById("vahvistus").innerHTML = txt;
+      }
+
+      confirmation();
+    </script>
+  </body>
+</html>
